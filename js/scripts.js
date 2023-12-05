@@ -57,13 +57,14 @@ function resetTimer() {
     minutes = 0;
     seconds = 0;
     milliseconds = 0;
-
+    isPaused = false;
+    
     minutesEl.textContent = "00";
     secondsEl.textContent = "00";
     millisecondsEl.textContent = "000";
 
     startBtn.style.display = "block";
-    pauseBtn.style.display = "block";
+    pauseBtn.style.display = "none";
     resumeBtn.style.display = "none";
 }
 
